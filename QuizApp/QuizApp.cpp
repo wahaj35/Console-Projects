@@ -1,17 +1,17 @@
+// A Quiz Application that asks user to chooose field. And will ask the questions according to selection of field. The program will ask random question of selected field.
 #include<iostream>
 #include<time.h>
-using namespace std;
+using namespace std; 
 class Quiz{
       protected:
       int random_number;
       char choice,ch;
       void DataInput(){
-        char regNo;
+        string regNo;
         string name;
-        // cout<<"Enter Your Registration Number: ";
-        // cin>>regNo;
+        getline(cin,regNo);
         cout<<"Enter Your Name: ";
-        cin>>name;
+        getline(cin,name);
       }
  void Result(int marks,int questionCount){
    cout<<"RESULT: "<<marks<<"/"<<questionCount<<endl;
@@ -1130,7 +1130,7 @@ int main()
      ArtsQuiz.Questions();
      break;
      default:
-     cout<<"Please select valid option";
+     cout<<"Please select valid option"<<endl;
         break;
      }
      cout<<"Try Another or Same Field? Press 'y' or 'n' "<<endl;
