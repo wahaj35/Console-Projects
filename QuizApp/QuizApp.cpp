@@ -3,6 +3,7 @@
 #include <time.h>
 #include <windows.h>
 using namespace std;
+//This handles the color adjustment to the text.
 HANDLE color = GetStdHandle(STD_OUTPUT_HANDLE);
 class Quiz
 {
@@ -20,6 +21,7 @@ protected:
    }
    void Result(int marks, int questionCount)
    {
+      // This function color the text. 7 is the code for white color.
       SetConsoleTextAttribute(color, 7);
       cout << "RESULT: " << marks << "/" << questionCount << endl;
    }
