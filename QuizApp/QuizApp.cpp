@@ -32,8 +32,10 @@ public:
    {
       do
       {
+         SetConsoleTextAttribute(color, 5);
          cout << "********** Computer Science **********" << endl
               << endl;
+              SetConsoleTextAttribute(color, 7);
          DataInput();
          int marks_count = 0, questionCount = 0;
          int count1 = 1, count2 = 1, count3 = 1, count4 = 1, count5 = 1, count6 = 1, count7 = 1, count8 = 1, count9 = 1, count10 = 1;
@@ -1550,9 +1552,11 @@ int main()
    char choice, ch;
    do
    {
+      SetConsoleTextAttribute(color, 9);
       cout << "********** Welcome to the Quiz Application **********" << endl
            << endl
            << endl;
+           SetConsoleTextAttribute(color, 7);
       cout << "The Questions will be according to your Interest. Please make your choice" << endl;
       cout << "A) Computer Science" << endl;
       cout << "B) Medicine" << endl;
